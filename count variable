@@ -1,0 +1,32 @@
+import java.io.*;
+class count{
+    public static void main(String args[]){
+        int lower=0,upper=0,space=0,number=0,symbils=0,vowels=0;
+        StringBuilder a=new StringBuilder("AShok @123");
+        System.out.println(a);
+        for(int i=0;i<a.length();i++){
+            if(a.charAt(i)>=97 && a.charAt(i)<=122){
+                lower++;
+            }
+             if(a.charAt(i)>=65 && a.charAt(i)<=92){
+                upper++;
+             }
+              if(a.charAt(i)>=48 && a.charAt(i)<=57){
+                number++;
+              }
+               if(a.charAt(i)==32){
+                space++;
+               }
+               if((a.charAt(i)=='a')||(a.charAt(i)=='i')||(a.charAt(i)=='o')||(a.charAt(i)=='u')||(a.charAt(i)=='e')){
+                   vowels++;
+               }
+               
+        }
+        System.out.println("lowercase"+lower);
+         System.out.println("uppercase"+upper);
+          System.out.println("space"+space);
+           System.out.println("number"+number);
+            System.out.println("vowels"+vowels);
+            System.out.println("symbols"+(a.length()-(lower+upper+space+number)));
+    }
+    }
