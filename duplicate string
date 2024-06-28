@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.Scanner;
+import java.util.Arrays;
+class duplicateelement{
+    public static void main(String args[]){
+     String a="ashok sofi";
+     char[] b=a.toCharArray();
+      for(int i=0;i<a.length();i++){
+          for(int j=i+1;j<a.length();j++){
+           if(b[i]==b[j] && (i!=j)){
+           
+       System.out.println(b[j]+"");
+       break;
+    }
+}
+}
+}
+}
