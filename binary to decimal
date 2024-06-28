@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class BINARY {
+    public static void decimal(int n) {
+        int[] a = new int[1000];
+        int i = 1;
+        while (n >= 0) {
+            a[i] = n % 2;
+            i++;
+        }
+        for (int j = i - 1; j > 0; j--)
+            System.out.println(j);
+
+    }
+
+    public static void main(String args[]) {
+        System.out.println("enter the value");
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        System.out.println("enter the decimal value");
+        System.out.println("enter the binary value");
+        decimal(n);
+    }
+}
