@@ -1,0 +1,13 @@
+import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class dateandtime {
+    public static void main(String args[]) {
+
+        SimpleDateFormat a = new SimpleDateFormat("yyy/mm/dd:hh/ss/SSS");
+        Date date = new Date();
+        String c = a.format(date);
+        System.out.println(c);
+}
+}
