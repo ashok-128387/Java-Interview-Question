@@ -1,0 +1,18 @@
+
+import java.io.*;
+import java.util.Arrays;
+class Swaparray{
+    public static void main(String[] args){
+        int temp=0;
+        int[] arr ={4,2,5v,6,7,8,9,0};
+        for(int i=0;i<arr.length;i++){
+            temp=arr[i];
+            arr[i]=arr[arr.length-1-i];
+            arr[arr.length-1]=temp;
+        }
+            for(int n:arr){
+                System.out.println(n+"");
+            }
+            
+        }
+    }
