@@ -1,0 +1,14 @@
+import java.io.*;
+class evenumber{
+    public static void main(String arg[]){
+     int n=21;
+    
+         if(n%2==0)
+         {
+            System.out.println("it is even number");
+           }
+    else{
+        System.out.println("it is not a even number");
+        }
+    }
+}
