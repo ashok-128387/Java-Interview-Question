@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class number {
+    public static int num(int n) {
+        int decimal = 0, power = 0;
+        while (n != 0) {
+            int rem = n % 10;
+            decimal += rem * Math.pow(2, power);// 0*2^0
+            n = n / 10;
+            power++;
+        }
+        return decimal;
+    }
+
+    public static void main(String args[]) {
+        System.out.println(num(1100));
+    }
+}
