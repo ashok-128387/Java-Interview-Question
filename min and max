@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.Arrays;
+class Swaparray{
+    public static void main(String[] args){
+     int[]a={12,4,6,78,34,56};
+     int min=a[0];
+     int max=a[0];
+     for(int i=1;i<a.length;i++){
+       if(a[i]>max){
+         max=a[i];
+           }
+           if(a[i]<min){
+               min=a[i];
+           }
+          }
+          System.out.println("minimum element is:"+min);
+            System.out.println("maximum element is:"+max);
+    }
+}
