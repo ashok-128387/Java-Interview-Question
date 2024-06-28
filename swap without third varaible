@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.Scanner;
+class swap{
+    public static void main(String args[]){
+        System.out.println("enter the value x and y");
+        Scanner in =new Scanner(System.in);
+        int x=in.nextInt();
+        int y=in.nextInt();
+        System.out.println("before swap number:"+x+" "+y);
+        x=x+y;
+        y=x-y;
+        x=x-y;
+         System.out.println("before swap number:"+x+" "+y);
+    }
+}
