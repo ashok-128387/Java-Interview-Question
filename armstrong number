@@ -1,0 +1,23 @@
+import java.io.*;
+class armstrongnumber{
+    public static void main(String args[]){
+        int n=153;
+        int digit1,digit2,digit3;
+        int temp=n;
+        digit3=temp%10;
+        temp=temp/10;
+         digit2=temp%10;
+        temp=temp/10;
+         digit1=temp%10;
+         temp=temp/10;
+        int result=(digit1*digit1*digit1)+(digit2*digit2*digit2)+(digit3*digit3*digit3);
+        if(n==result){
+            System.out.println("it is armstrong number");
+        }
+        else{
+            System.out.println("it is not a armstrong number");
+        }
+        
+    
+    }
+}
