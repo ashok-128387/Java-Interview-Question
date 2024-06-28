@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.Scanner;
+import java.util.Arrays;69
+
+
+class whitespace{
+    public static void main(String args[]){
+        Scanner in=new Scanner(System.in);
+        System.out.println("enter the input string");
+        String a=in.nextLine();
+        char[]b=a.toCharArray();
+        String c="";
+        for(int i=0;i<b.length;i++){
+            if((b[i]!=' ') && (b[i]!='\t')){
+                c=c+b[i];
+                
+            }
+        }
+        System.out.println("enter the string"+a);
+        System.out.println("enter the string"+c);
+    }
+}
