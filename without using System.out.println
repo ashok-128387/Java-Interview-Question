@@ -1,0 +1,10 @@
+import java.io.PrintWriter;  
+import java.io.*;
+public class print{
+public static void main(String[] args){
+  PrintWriter pw = new PrintWriter(System.out);
+  pw.print("hi");
+  pw.flush();
+ pw.close();
+}
+}
