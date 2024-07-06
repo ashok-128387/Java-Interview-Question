@@ -1,0 +1,12 @@
+import java.io.*;
+public class reader{
+public static void main(String[] args)throws IOException{
+FileReader fr = new FileReader(".txt");
+ int i=fr.read();
+while(i!=-1){
+System.out.println((char)i);
+i=fr.read();/// read next charater and re initalize i var
+}
+fr.close():
+}
+}
